@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-using Movie_ticket_sales_management_app.DTO;
 using Movie_ticket_sales_management_app.DAL;
+using Movie_ticket_sales_management_app.BUS;
 
 namespace Movie_ticket_sales_management_app
 {

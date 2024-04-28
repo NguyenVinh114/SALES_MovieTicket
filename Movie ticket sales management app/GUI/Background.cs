@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Movie_ticket_sales_management_app.DAL;
+using Movie_ticket_sales_management_app.DTO;
+using Movie_ticket_sales_management_app.BUS;
 
 namespace Movie_ticket_sales_management_app
 {
@@ -20,8 +23,8 @@ namespace Movie_ticket_sales_management_app
         private void Background_Load(object sender, EventArgs e)
         {
             this.Show();
-            frmDangnhap frmDangnhap = new frmDangnhap();
-            frmDangnhap.ShowDialog();
+            frmDangnhap dn = new frmDangnhap();
+            dn.ShowDialog();
         }
     }
 }

@@ -63,6 +63,16 @@ namespace Movie_ticket_sales_management_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _122e38823bf89aa6c3e9__1_ {
+            get {
+                object obj = ResourceManager.GetObject("122e38823bf89aa6c3e9 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5d1c34b8f9491d82bf62391f7ac4e4a3 {
             get {
                 object obj = ResourceManager.GetObject("5d1c34b8f9491d82bf62391f7ac4e4a3", resourceCulture);

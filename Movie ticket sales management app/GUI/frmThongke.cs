@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Movie_ticket_sales_management_app.GUI
 {
-    public partial class frmThongke : Form
+    public partial class frmThongKe : Form
     {
-        public frmThongke()
+        public frmThongKe()
         {
             InitializeComponent();
         }

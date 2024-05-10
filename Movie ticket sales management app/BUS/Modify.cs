@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 using Movie_ticket_sales_management_app.DAL;
 using Movie_ticket_sales_management_app.DTO;
 
@@ -46,6 +47,23 @@ namespace Movie_ticket_sales_management_app.BUS
                 sqlConnection.Close();
             }
         }
+
+
+        SqlDataAdapter dataAdapter;  
+        public DataTable Table(string query)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection sqlConnection=Connection.GetSqlConnection()) 
+            {
+                sqlConnection.Open();
+                dataAdapter = new SqlDataAdapter(query, sqlConnection);
+                dataAdapter.Fill(dataTable);
+                sqlConnection.Close();
+            }
+            return dataTable;
+        }
+
+        
 
     }
 }

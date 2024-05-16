@@ -16,7 +16,7 @@ namespace Movie_ticket_sales_management_app
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            Application.Run(new frmQLDangNhap());
+            Application.Run(new frmChonphim());
 
 
 

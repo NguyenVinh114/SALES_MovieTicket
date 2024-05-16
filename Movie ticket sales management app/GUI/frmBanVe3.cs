@@ -11,13 +11,12 @@ using System.Windows.Forms;
 
 namespace Movie_ticket_sales_management_app.GUI
 {
-    public partial class frmQLBanVevaChiTiet : Form
+    public partial class frmBanVe3 : Form
     {
-
         private int maHoaDon;
         private DataTable tblChiTietHoaDon;
         private int soLuongVeMua;
-        public frmQLBanVevaChiTiet()
+        public frmBanVe3()
         {
             InitializeComponent();
             maHoaDon = 1;
@@ -34,7 +33,7 @@ namespace Movie_ticket_sales_management_app.GUI
             Application.Exit();
         }
 
-        private void frmQLBanVevaChiTietHD_Load(object sender, EventArgs e)
+        private void frmBanVe3_Load(object sender, EventArgs e)
         {
             KhoiTosoGhe(4, 5);
         }
@@ -98,9 +97,8 @@ namespace Movie_ticket_sales_management_app.GUI
             }
             return soLuongVeDaMua;
         }
-        private void btnMua_Click_1(object sender, EventArgs e)
+        private void btnMua_Click(object sender, EventArgs e)
         {
-
             double tongTien = 0, Giaghe = 0;
             int LanMua = 0, soGhe;
             foreach (Button ghe in pnlHangGhe.Controls)
@@ -112,7 +110,7 @@ namespace Movie_ticket_sales_management_app.GUI
                     tongTien += Giaghe;
                     ghe.BackColor = Color.Yellow;
                     tblChiTietHoaDon.Rows.Add("HD" + maHoaDon, soGhe, Giaghe);
-                  /*  Luu("HD" + maHoaDon, soGhe, Giaghe);*/
+                    /*  Luu("HD" + maHoaDon, soGhe, Giaghe);*/
                     LanMua++;
                 }
             }
@@ -122,8 +120,8 @@ namespace Movie_ticket_sales_management_app.GUI
             txtSoVe.Text = "Số lượng ghế mua: " + soLuongVeMua.ToString();
             int soLuongVeDaMua = DemSoLuongVeDaMua();
             txtmua.Text = "Tổng ghế đã đặt: " + soLuongVeDaMua.ToString();
-
         }
+
 
         private void Luu(string maHoaDon, int soGhe, double giaTien)
         {
@@ -166,10 +164,8 @@ namespace Movie_ticket_sales_management_app.GUI
         }
 
 
-
-      
-
-        private void dgvDanhSachHoaDon_CellClick_1(object sender, DataGridViewCellEventArgs e)
+   
+        private void dgvDanhSachHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var rowIndex = e.RowIndex;
             if (rowIndex < 0)

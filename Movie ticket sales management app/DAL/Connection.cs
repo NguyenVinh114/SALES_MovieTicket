@@ -9,7 +9,7 @@ namespace Movie_ticket_sales_management_app.DAL
 {
     internal class Connection
     {
-        private static string stringConnection = @"Data Source=LAPTOP-JH4SMB4R\SQLEXPRESS;Initial Catalog=QL_Banvexemphim;Integrated Security=True;";
+        private static string stringConnection = @"Data Source=PC\SQLEXPRESS;Initial Catalog=QL_Banvexemphim;Integrated Security=True;";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);

@@ -83,6 +83,26 @@ namespace Movie_ticket_sales_management_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BGR_1 {
+            get {
+                object obj = ResourceManager.GetObject("BGR_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BGR_2 {
+            get {
+                object obj = ResourceManager.GetObject("BGR_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hinh_anh_one_piece_dep_chat_nhat {
             get {
                 object obj = ResourceManager.GetObject("hinh-anh-one-piece-dep-chat-nhat", resourceCulture);
@@ -156,6 +176,16 @@ namespace Movie_ticket_sales_management_app.Properties {
         internal static System.Drawing.Bitmap phone_call {
             get {
                 object obj = ResourceManager.GetObject("phone-call", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PIC1 {
+            get {
+                object obj = ResourceManager.GetObject("PIC1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
